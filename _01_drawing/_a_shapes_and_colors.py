@@ -32,7 +32,7 @@ if __name__ == '__main__':
     my_turtle.goto(0, 0)
     # Have your turtle draw a circle using .circle(radius, steps=30)
     my_turtle.penup()
-    my_turtle.goto(-200, -200)
+    my_turtle.goto(-200, 200)
     my_turtle.pendown()
     my_turtle.begin_fill()
     my_turtle.circle(100, steps=30)
@@ -43,14 +43,16 @@ if __name__ == '__main__':
     # and .end_fill() below
 
     # Draw 3 more shapes with different fill colors!
+    my_turtle.color('blue')
     my_turtle.pencolor('green')
     my_turtle.penup()
     my_turtle.goto(200, 200)
     my_turtle.pendown()
     my_turtle.begin_fill()
+    my_turtle.pensize(5)
     for i in range(5):
         my_turtle.left(72)
         my_turtle.forward(100)
-        my_turtle.end_fill()
+    my_turtle.end_fill()
     # ===================== DO NOT EDIT THE CODE BELOW ============================
     turtle.done()
