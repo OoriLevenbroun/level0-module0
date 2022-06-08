@@ -30,10 +30,23 @@ if __name__ == '__main__':
     bob.speed(0)
     # Use a for loop to repeat all of the code below ONE time (we will change
     # this later)
-    for i in range(1):
+    for i in range(25):
+        bob.pencolor('red')
         bob.fillcolor('orange')
+        bob.begin_fill()
+        bob.right(360/8)
+        bob.forward(64)
+        bob.left(40)
+        bob.forward(flameSize)
+        bob.right(170)
+        bob.forward(flameSize)
+        bob.right(62)
+        bob.pencolor('black')
+        bob.forward(baseSize)
+        bob.end_fill()
+        bob.hideturtle()
         # Set the turtle .fillcolor() to orange
-        #continue from call the turtle .begin_fill function
+
         # Call the turtle .begin_fill() function
         
         # TURN RIGHT     Turn the turtle 1/8 of a circle (hint: 360 degrees
