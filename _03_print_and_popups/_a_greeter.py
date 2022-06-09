@@ -17,6 +17,11 @@ if __name__ == '__main__':
     print('hello' + name)
     # Show an error message using messagebox.showerror()
     messagebox.showerror(title = 'error', message = 'viruse detected')
+    sos = simpledialog.askinteger(title='the only way to stop the virus is to enter the password', prompt='enter password')
+    if sos == 123:
+        messagebox.showinfo(title='good job', message='you saved humanity')
+    else:
+        messagebox.showerror(title='wrong', message='humanity will now suffer becuse of you')
     # Run the window's .mainloop() method
     window.mainloop()
     pass
