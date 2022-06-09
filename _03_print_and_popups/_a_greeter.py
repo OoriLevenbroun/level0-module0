@@ -12,6 +12,7 @@ if __name__ == '__main__':
     name = simpledialog.askstring(title= 'Greeter', prompt="what is your name")
     # Show a message box with your message using the .showinfo() method
     messagebox.showinfo(message= "hello " + name + ", I will be watching you")
+    messagebox.showinfo(message='and just so you know ' + name + ', I am never gonna give you up, never gonna let you down, never gonna turn around and HURT YOU!')
     # Print your message to the console using the print() function
     print('hello' + name)
     # Show an error message using messagebox.showerror()

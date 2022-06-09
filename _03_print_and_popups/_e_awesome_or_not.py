@@ -24,8 +24,11 @@ if __name__ == '__main__':
             messagebox.showinfo(title='thats ok', message=awe + ' is ok')
     # 6. If your variable is  2
         # -- tell the user whatever they entered is boring.
-    
+    if randInt == 2:
+        messagebox.showinfo(title='BORING!', message=awe + ' is BORING!')
     # 7. If your variable is  3
+    if randInt == 3:
+        messagebox.showinfo(title='error', message=awe + ' does not exist')
         # -- invent your own message to give to the user (be nice).
         
     # Run the window's .mainloop() method
